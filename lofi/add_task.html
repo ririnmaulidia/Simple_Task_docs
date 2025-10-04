@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tambah Tugas Baru</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-frame">
+        <div class="status-bar">
+            <span>9:41 AM</span>
+            <span>Wi-Fi 🔋</span>
+        </div>
+        <div class="header">
+            <button class="back-btn">&lt;</button>
+            <h1>Tambah Tugas</h1>
+            <div></div> <!-- Placeholder for alignment -->
+        </div>
+        <div class="content">
+            <form>
+                <label for="taskDescription">Deskripsi Tugas</label>
+                <textarea id="taskDescription" placeholder="Masukkan deskripsi tugas Anda..." rows="4"></textarea>
+
+                <label for="dueDate">Tanggal Jatuh Tempo (Opsional)</label>
+                <input type="text" id="dueDate" placeholder="Contoh: Besok, 25 Nov">
+
+                <label for="priority">Prioritas (Opsional)</label>
+                <input type="text" id="priority" placeholder="Contoh: Tinggi, 1, Rendah">
+
+                <div class="btn-group">
+                    <button type="submit" id="save-task-btn" class="primary-btn">Simpan Tugas</button>
+                    <button type="button" class="secondary-btn back-btn">Batal</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

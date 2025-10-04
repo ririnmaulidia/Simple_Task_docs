@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Tugas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="mobile-frame">
+        <div class="status-bar">
+            <span>9:41 AM</span>
+            <span>Wi-Fi 🔋</span>
+        </div>
+        <div class="header">
+            <button class="back-btn">&lt;</button>
+            <h1>Detail Tugas</h1>
+            <div></div> <!-- Placeholder for alignment -->
+        </div>
+        <div class="content">
+            <form>
+                <label for="editTaskDescription">Deskripsi Tugas</label>
+                <textarea id="editTaskDescription" rows="4">Belajar Flutter dan Riverpod untuk MVP app.</textarea>
+
+                <label for="editDueDate">Tanggal Jatuh Tempo</label>
+                <input type="text" id="editDueDate" value="2023-11-25">
+
+                <label for="editPriority">Prioritas</label>
+                <input type="text" id="editPriority" value="Tinggi">
+
+                <div class="btn-group">
+                    <button type="submit" id="save-task-btn" class="primary-btn">Update Tugas</button>
+                    <button type="button" id="delete-task-btn" class="secondary-btn">Hapus Tugas</button>
+                </div>
+            </form>
+            <button type="button" class="btn-link back-btn">Kembali ke Daftar Tugas</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
